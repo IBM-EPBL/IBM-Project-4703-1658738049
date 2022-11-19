@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content="An information page for patients diagnosed with Parkinson's Disease and living in Oxfordshire. You can find the contacts for your nurse specialist, links and your care pathway with your referrals or clinical appointments.">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Parkinson Prediction and Information Page </title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark pl-3" >
+      <a class="navbar-brand" href="#home"><strong>PARKINSON</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <strong><a style="color:grey;" class="nav-link" href="/home">HOME</a></strong>
+          </li>
+          <li class="nav-item">
+            <strong><a style="color:grey;" class="nav-link" href="#info">INFO</a></strong>
+          </li>
+          <li class="nav-item">
+            <strong><a style="color:grey;" class="nav-link" href="/upload">PREDICT</a></strong>
+          </li>
+          <li class="nav-item">
+            <strong><a style="color:grey;" class="nav-link" href="#pathway">PATHWAY</a></strong>
+          </li>
+          <li class="nav-item">
+            <strong><a style="color:grey;" class="nav-link" href="#contacts">CONTACTS</a></strong>
+          </li>
+          <li class="nav-item">
+            <strong><a style="color:grey;" class="nav-link" href="/logout">LOGOUT</a></strong>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header id="home">
+      <div style="background-color:powderblue;" class="jumbotron d-flex flex-column align-items-start justify-content-center">
+        <h1 class="display-4 text-uppercase"><strong>Parkinson's prediction website</strong></h1>
+        <p class="lead text-uppercase">Welcome to the Parkinson Information Page</p>
+        <p class="pr-lg-5 text-justify">More than 10 million people are living with Parkinson’s Disease worldwide, according to the Parkinson’s Foundation. While Parkinson’s cannot be cured, early detection along with proper medication can significantly improve symptoms and quality of life.
+
+The researchers found that the drawing speed was slower and the pen pressure is lower among Parkinson’s patients. One of the indications of Parkinson’s is tremors and rigidity in the muscles, making it difficult to draw smooth spirals and waves. It is possible to detect Parkinson’s disease using the drawings alone instead of measuring the speed and pressure of the pen on paper. Our goal is to quantify the visual appearance(using HOG method) of these drawings and then train a machine learning model to classify them. In this project, We are using, Histogram of Oriented Gradients (HOG) image descriptor along with a Random Forest classifier to automatically detect Parkinson’s disease in hand-drawn images of spirals and waves.This website was created to help in early and economically feasible detection of Parkinsons' disease.</p>
+        <div>
+          <img src="https://pic2.zhimg.com/80/v2-211faee9982aeaa2acf18e31e03cacb9_1440w.webp" alt="Illustration about Parkinson's Symptoms" width="800" height="400" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Info -->
+      <div class="info container" id="info">
+        <div class="section-title">
+          <h2>Info</h2>
+        </div>
+        <!-- Cards -->
+        <div class="card-deck">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase font-weight-bold">Parkinson's Disease</h5>
+              <p class="card-text text-justify">Parkinson Disease (PD) is a neurodegenarative disorder. This means that neurons in the part of the brain called substantia nigra are affected, which leads to a reduction of dopamine production. Dopamine is a chemical neuro-transmitter that regulates the movements of the body. The causes remain unknown. However, it is very important to remember that PD affects people in many different ways.</p>
+              <a href="https://www.nhs.uk/conditions/parkinsons-disease/" target="_blank" class="btn btn-pink"> Parkinson Disease (NHS)</a>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase font-weight-bold">Symptoms</h5>
+              <p class="card-text text-justify">Symptoms generally develop slowly. Although PD affects patients in many different ways, the most common symptoms are tremor (involuntary shaking of parts of the body), rigidity of the limbs, bradykinesia (slow movements) or balance problems. Some other non-motor symptoms may also be exprienced such as nerve pain, speech difficulties, dysphagia (swallowing difficulties), urinary incontinence, anxiety or depression.</p>
+              <a href="https://www.nhs.uk/conditions/parkinsons-disease/symptoms/" target="_blank" class="btn btn-pink"> Parkinson Symptoms (NHS)</a>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase font-weight-bold">Treatments</h5>
+              <p class="card-text text-justify">It is possible to live a good quality of life with Parkinson. Your specialist team will tailor your treatment according to your symptoms. You may receive dopaminergic medication such as Levodopa&copy;, Madopar&copy; or Sinemet&copy;. Non-medical treatment are also provided by Physiotherapists. Your specialist will discuss with you if you have the option, at an advance stage, to receive further therapy such as DBS (Deep Brain Stimulation).</p>
+              <a href="https://www.nhs.uk/conditions/parkinsons-disease/" target="_blank" class="btn btn-pink"> Neurosciences Leaflets (OUH)</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pathway -->
+      <div class="pathway container" id="pathway">
+        <div class="section-title">
+          <h2 >Pathway</h2>
+        </div>
+        <!-- Pathway Chart -->
+        <div class="d-flex flex-column pathway-chart">
+          <!-- 1 - Referral -->
+          <div class="pathway-step border border-white">
+            <h4><i class="fas fa-notes-medical"></i> 1: Referral </h4>
+            <p>Visit your GP or another medical specialist to get referred to a Parkinson's Specialist Consultant or a Neurology/Geratology Consultant.</p>
+          </div>
+          <!-- 2 - Appointment -->
+          <div class="pathway-step border border-white">
+            <h4><i class="fas fa-hospital"></i> 2: Appointment</h4>
+            <p>You will receive an appointment date with the Neurologist or Geratologist at the John Radcliffe Hospital. A diagnosis will be made and you will be referred to your local Parkinson's Disease Specialist Nurse.</p>
+          </div>
+          <!-- 3 - Review -->
+          <div class="pathway-step border border-white">
+            <h4><i class="fas fa-user-nurse"></i> 3: Review</h4>
+            <p>Within 6 to 8 weeks after your diagnosis, you will be seen by your Parkinson's Disease Specialist Nurse. You will be given an information pack and be referred to the Multidisciplinary team.</p>
+          </div>
+          <!-- 4 - MDT -->
+          <div class="pathway-step border border-white">
+            <h4><i class="fas fa-user-plus"></i> 4: Multidisciplinary Team</h4>
+            <p>You may be referred to the First Step Programme, a support group run by people with Parkinson's, in your local area. If required you may be referred to therapists such as:</p>
+              <ul class="ml-5">
+                <li>Physiotherapists (PT)</li>
+                <li>Occupational Therapists (OT)</li>
+                <li>Speech and Language Therapists (SALT)</li>
+                <li>Dieticians</li>
+                <li>Social Services</li>
+              </ul>
+            <p><i class="fas fa-exclamation mr-2"></i> Inform your nurse if you need any of the sevices above.</p>
+          </div>
+          <!-- 5 - Regular Appointments -->
+          <div class="pathway-step border border-white">
+            <h4><i class="fas fa-clinic-medical"></i> 5: Regular Clinics Appointments</h4>
+            <p>Every year you will receive at least two appointments with your healthcare professional:</p>
+              <ul class="list-unstyled ml-4">
+                <li><i class="fas fa-user-md"></i> Consultant: Once a year</li>
+                <li><i class="fas fa-user-nurse"></i> Spcialist Nurse: Once a year or more frequently if necessary.</li>
+              </ul>
+            <p><i class="fas fa-exclamation mr-2"></i> Your specialist nurse may see you at home <em>if needed</em>. You are encouraged to contact your Specialist Nurse frequently depending on your needs.</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Contacts -->
+    <div class="contacts container" id="contacts">
+      <div class="section-title">
+        <h2>Contacts</h2>
+        <p>You can find here the contact details of Parkinson's Disease Specialists </p>
+      </div>
+      <!-- Cards -->
+      <div class="card-deck">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase font-weight-bold">Dr. Yuvasri Chinnuswamy</h5>
+            <p class="card-text text-justify"><i class="fas fa-phone-alt pr-2"></i>+91 902-342 1803</p>
+            <p>(Administrator Office)</p>
+            <p class="card-text"><i class="far fa-envelope pr-2"></i>Neurosciences Offices, West Wing<br> Sri Ramakrishna Hospital, Coimbatore</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase font-weight-bold">Dr. K Ramadoss</h5>
+            <p class="card-text text-justify"><i class="fas fa-phone-alt pr-2"></i>+91 422-224 0521</p>
+            <p class="card-text text-justify"><i class="far fa-envelope pr-2"></i>Velavan Health Center <br>Specialty Orthopaedic Centre</p>
+            <p class="card-text text-justify"><i class="fas fa-map-signs pr-2"></i>Areas: Pollachi, Coimbatore (city), Tamil Nadu</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase font-weight-bold">Dr. Pranesh Upadhyay</h5>
+            <p class="card-text text-justify"><i class="fas fa-phone-alt pr-2"></i>+91 759-891 2803</p>
+            <p class="card-text text-justify"><i class="far fa-envelope pr-2"></i>Dr. Pranesh Clinic <br> Specialty Orthopaedic Centre</p>
+            <p class="card-text text-justify"><i class="fas fa-map-signs pr-2"></i>Areas: Tiruppur and Pollachi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maps -->
+    <div class="maps container" id="maps">
+      <div class="section-title">
+        <h2>Maps</h2>
+      </div>
+      <!-- Cards -->
+      <div class="card-deck">
+        <div class="card mb-3">
+          <iframe class="container-fluid px-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2062227119704!2d76.97539531407273!3d11.023148657607104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8584e4d002f0d%3A0x2b94348a8824200f!2sSri%20Ramakrishna%20Hospital%20(%20Multi-Speciality%20Hospital%20in%20Coimbatore)!5e0!3m2!1sen!2sin!4v1668579013701!5m2!1sen!2sin" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="card-body">
+            <h5 class="card-title text-uppercase font-weight-bold">Sri Ramakrishna Hospital</h5>
+            <p class="card-text text-justify"><i class="far fa-envelope pr-2"></i> 395, Sarojini Naidu Rd, Siddhapudur, Balasundaram Layout, B.K.R Nagar<br>Coimbatore, Tamil Nadu 641044 </p>
+            <p class="card-text text-justify"><i class="fas fa-phone-alt pr-2"></i> 0300 304 7777</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <iframe class="container-fluid px-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.111860862161!2d76.9736064140728!3d11.030233457475433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8597c85cadec9%3A0x291d9d0a449d54b7!2sVelavan%20health%20center!5e0!3m2!1sen!2sin!4v1668579195887!5m2!1sen!2sin" width="600" " width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="card-body">
+            <h5 class="card-title text-uppercase font-weight-bold">Velavan's Health center</h5>
+            <p class="card-text text-justify"><i class="far fa-envelope pr-2"></i> Sivasakthi Colony, Ganapathy, Coimbatore, Tamil Nadu 641006</p>
+            <p class="card-text text-justify"><i class="fas fa-phone-alt pr-2"></i> 0300 304 7777</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Links
+    <div class="links container" id="links">
+      <div>
+        <img src="https://pbs.twimg.com/media/E2ALbWqWEAMcu9p.jpg:large" alt="Illustration about Parkinson's Symptoms" width="800" height="400" />
+      </div>
+    </div> -->
+  </main>
+
+   <!-- Footer -->
+   <footer>
+    <div>
+      <p>2022© All rights reserved.</p>
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
